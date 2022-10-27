@@ -1,0 +1,19 @@
+@import "./src/styles/variables";
+
+.button {
+  box-sizing: border-box;
+  margin: 12px;
+  padding: 8px 18px;
+  border-radius: 8px;
+  background-color: $base-color;
+  color: $white;
+
+  &_ghost {
+    color: $base-color;
+    background-color: inherit;
+    border: 2px solid transparent;
+    &:hover {
+      border: 2px solid $base-color;
+    }
+  }
+}
