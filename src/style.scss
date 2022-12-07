@@ -1,4 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "styles/normalized";
-@import "components/button/button";
-@import "components/input/input";
+@import "partials/button/button";
+@import "partials/input/input";
+@import "pages/auth/auth";
+@import "pages/register/register";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 280px;
+  height: 100%;
+}
+
+.form-buttons-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}

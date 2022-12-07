@@ -1,14 +1,15 @@
-@import "./src/styles/variables";
+@import "../../styles/variables";
 
 .button {
   box-sizing: border-box;
-  margin: 12px;
+  width: 100%;
+  margin: 2px;
   padding: 8px 18px;
   border-radius: 8px;
   background-color: $base-color;
   color: $white;
 
-  &_ghost {
+  &__ghost {
     color: $base-color;
     background-color: inherit;
     border: 2px solid transparent;

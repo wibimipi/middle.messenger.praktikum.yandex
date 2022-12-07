@@ -1,0 +1,19 @@
+{{!< base}}
+
+<div class="register-wrapper">
+    <h2 class="register-header">Регистрация</h2>
+    <form class="form">
+        {{> input/input type="text" label="Почта"}}
+        {{> input/input type="text" label="Логин"}}
+        {{> input/input type="text" label="Имя"}}
+        {{> input/input type="text" label="Фамилия"}}
+        {{> input/input type="phone" label="Телефон"}}
+        {{> input/input type="password" label="Пароль"}}
+        {{> input/input type="password" label="Подтвердите пароль"}}
+
+        <div class="form-buttons-container">
+            {{> button/button label="Зарегестрироваться"}}
+            {{> button/button type="button__ghost" label="Войти"}}
+        </div>
+    </form>
+</div>
