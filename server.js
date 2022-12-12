@@ -4,6 +4,6 @@ const PORT = 3000;
 
 app.use(express.static("dist"));
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`Server starting on port ${PORT}`);
 });

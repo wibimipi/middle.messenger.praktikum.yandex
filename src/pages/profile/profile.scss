@@ -22,10 +22,10 @@
 .profile-buttons {
   display: flex;
   flex-direction: column;
-  & > a {
+  & > .text-link {
     padding: 10px 0;
   }
-  & > a:not(:last-child) {
+  & > .text-link:not(:last-child) {
     border-bottom: 1px solid #eaeaea;
   }
 }
