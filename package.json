@@ -4,9 +4,9 @@
   "description": "",
   "source": "src/index.ts",
   "scripts": {
-    "dev": "parcel src/pages/index.hbs --no-cache",
-    "start": "parcel src/pages/index.hbs",
-    "build": "parcel build src/pages/index.hbs && node ./server.js"
+    "dev": "parcel src/index.hbs --no-cache",
+    "start": "parcel src/index.hbs",
+    "build": "parcel build src/index.hbs && node ./server.js"
   },
   "keywords": [],
   "author": "",
