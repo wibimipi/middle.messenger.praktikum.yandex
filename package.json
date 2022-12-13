@@ -5,7 +5,7 @@
   "source": "src/index.ts",
   "scripts": {
     "dev": "parcel src/pages/index.hbs --no-cache",
-    "start": "parcel build src/pages/index.hbs && node ./server.js",
+    "start": "parcel src/pages/index.hbs",
     "build": "parcel build src/pages/index.hbs && node ./server.js"
   },
   "keywords": [],
