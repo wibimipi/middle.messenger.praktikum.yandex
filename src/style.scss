@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "styles/normalized";
+@import "partials/button/button";
+@import "partials/input/input";
+@import "partials/profile-value/profile-value";
+@import "pages/auth/auth";
+@import "pages/register/register";
+@import "pages/profile/profile";
+@import "styles/variables";
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  width: 280px;
+  height: 100%;
+}
+
+.form-buttons-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.error-wrapper {
+  width: 200px;
+  text-align: center;
+}
+
+.error-message {
+  margin-bottom: 60px;
+}
+
+.text-link {
+  text-decoration: none;
+  color: $base-color;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.secondary-text{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+}
+
+.danger {
+  color: $danger;
+}

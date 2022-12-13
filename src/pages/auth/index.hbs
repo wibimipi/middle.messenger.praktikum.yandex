@@ -1,0 +1,14 @@
+{{!< base}}
+
+<div class="auth-wrapper">
+  <h2 class="auth-header">Вход</h2>
+    <form class="form">
+        {{> input/input type="text" label="Логин"}}
+        {{> input/input type="password" label="Пароль"}}
+
+        <div class="form-buttons-container">
+            {{> button/button label="Авторизоваться"}}
+            {{> button/button type="button__ghost" label="Нет аккаунта?"}}
+        </div>
+    </form>
+</div>

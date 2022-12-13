@@ -1,0 +1,31 @@
+---
+user: {
+    name: "Иван",
+    login: "iven",
+    email: "ivan@yandex.ru",
+    surname: "Иванов",
+    nickname: "ivan_ivan",
+    phone: "89991234567"
+}
+---
+{{!< base}}
+
+<div class="profile-wrapper">
+    <div class="profile-header">
+        <img src="../../assets/avatar.svg"  alt="avatar"/>
+        <h4>{{user.name}}</h4>
+    </div>
+    <div class="profile-content">
+        {{> profile-value/profile-value title="Почта" value=user.email}}
+        {{> profile-value/profile-value title="Логин" value=user.login}}
+        {{> profile-value/profile-value title="Имя" value=user.name}}
+        {{> profile-value/profile-value title="Фамилия" value=user.surname}}
+        {{> profile-value/profile-value title="Имя в чате" value=user.nickname}}
+        {{> profile-value/profile-value title="Телефон" value=user.phone}}
+    </div>
+    <div class="profile-buttons">
+        {{> text-link/text-link title="Изменить данные"}}
+        {{> text-link/text-link title="Изменить пароль"}}
+        {{> text-link/text-link title="Выйти" addClass="danger"}}
+    </div>
+</div>
